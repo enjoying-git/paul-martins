@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0a0a0f" />
+  <title>Paul Martins — Senior Software Engineer | Distributed Systems & Cloud Architecture</title>
+  <meta name="description" content="Paul Martins is a Senior Software Engineer with 11+ years building distributed systems, cloud-native backends, and high-scale APIs for enterprise platforms." />
+  <meta name="author" content="Paul Martins" />
+  <meta name="keywords" content="Senior Software Engineer, Backend Engineer, Distributed Systems, Cloud Architecture, Go, PHP, Kubernetes, AWS, Microservices" />
+  <link rel="canonical" href="https://paulmartins.dev/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Paul Martins — Senior Software Engineer" />
+  <meta property="og:description" content="11+ years engineering distributed systems, cloud-native backends, and resilient APIs at enterprise scale." />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Paul Martins",
+    "jobTitle": "Senior Software Engineer",
+    "address": { "@type": "PostalAddress", "addressCountry": "Brazil" },
+    "knowsLanguage": ["Portuguese", "English"],
+    "description": "Senior Software Engineer with 11+ years of experience in distributed systems, cloud architecture, and scalable backend engineering."
+  }
+  </script>
+</head>
+<body>
+  <!-- Loading transition -->
+  <div id="loader" aria-hidden="true">
+    <div class="loader-ring"></div>
+  </div>
+
+  <!-- Animated background -->
+  <div class="bg-aurora" aria-hidden="true">
+    <div class="aurora aurora-1"></div>
+    <div class="aurora aurora-2"></div>
+    <div class="aurora aurora-3"></div>
+    <div class="grid-overlay"></div>
+  </div>
+  <canvas id="particles" aria-hidden="true"></canvas>
+
+  <!-- Navigation -->
+  <header class="nav" id="nav">
+    <div class="container nav-inner">
+      <a href="#home" class="logo" aria-label="Paul Martins home">
+        <span class="logo-text">Paul Martins</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#stack">Stack</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#expertise">Expertise</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a href="#contact" class="btn btn-ghost nav-cta">Get in touch</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <div class="badge-row">
+            <span class="pill"><span class="pulse-dot"></span> Available for senior engineering roles</span>
+          </div>
+          <p class="name-kicker">Hi, I'm</p>
+          <h1 class="h1 name-hero"><span class="grad-text">Paul Martins</span></h1>
+          <p class="role-tag">Senior Software Engineer · Distributed Systems &amp; Cloud Architecture</p>
+          <p class="sub">
+            <span id="typed"></span><span class="caret" aria-hidden="true"></span>
+          </p>
+          <p class="lead">
+            I'm Paul Martins — a Senior Software Engineer with <strong>11+ years</strong> designing cloud-native backends, event-driven architectures, and high-throughput APIs for enterprise platforms. I help teams modernize legacy systems, harden reliability, and ship infrastructure that holds up under load.
+          </p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#projects">View selected work <span aria-hidden="true">→</span></a>
+            <a class="btn btn-ghost" href="#contact">Start a conversation</a>
+          </div>
+          <div class="tech-badges" aria-label="Core technologies">
+            <span class="tbadge">Go</span>
+            <span class="tbadge">PHP</span>
+            <span class="tbadge">Kubernetes</span>
+            <span class="tbadge">AWS</span>
+            <span class="tbadge">PostgreSQL</span>
+            <span class="tbadge">gRPC</span>
+            <span class="tbadge">Kafka-style messaging</span>
+          </div>
+          
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="orbit">
+            <div class="orbit-ring r1"></div>
+            <div class="orbit-ring r2"></div>
+            <div class="orbit-ring r3"></div>
+            <div class="avatar-wrap">
+              <img src="assets/profile.jpg" alt="Portrait of Paul Martins" class="avatar" loading="lazy" onerror="this.style.display='none';this.parentNode.classList.add('avatar-fallback');this.parentNode.setAttribute('data-initials','PM');" />
+            </div>
+            <span class="chip chip-1">99.99% uptime</span>
+            <span class="chip chip-2">p95 &lt; 80ms</span>
+            <span class="chip chip-3">12B events/mo</span>
+          </div>
+        </div>
+      </div>
+      <!-- <a href="#about" class="scroll-cue" aria-label="Scroll down"><span></span></a> -->
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">01 — About</span>
+          <h2 class="h2">Engineering mindset built for production scale.</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-copy reveal">
+            <p>My career has been spent in the backend — designing the kind of systems that run quietly in the background, process millions of events, and stay up at 3am on a holiday weekend. I specialize in <strong>distributed architectures</strong>, cloud-native infrastructure, and the APIs that hold large products together.</p>
+            <p>I care about correctness, observability, and the engineering practices that make teams faster over time: clear boundaries between services, contracts that survive change, deployment pipelines that fail loudly and recover fast, and instrumentation that turns incidents into data.</p>
+            <p>I've spent a meaningful part of the last decade modernizing legacy monoliths — peeling them apart into services, replacing fragile schedulers with event-driven flows, and migrating workloads into <strong>Kubernetes on AWS and GCP</strong>. I lean on AI-assisted workflows pragmatically: as a force multiplier for reviews, scaffolding, and refactors, never as a replacement for engineering judgment.</p>
+          </div>
+          <aside class="about-meta reveal">
+            <div class="meta-card">
+              <h3>Profile</h3>
+              <dl>
+                <dt>Role</dt><dd>Senior Software Engineer</dd>
+                <dt>Experience</dt><dd>11+ years</dd>
+                <dt>Location</dt><dd>Avaí, Brazil</dd>
+                <dt>Languages</dt><dd>Portuguese · English</dd>
+                <dt>Focus</dt><dd>Backend · Distributed Systems · Cloud</dd>
+              </dl>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="section section-tight">
+      <div class="container">
+        <div class="stats reveal">
+          <div class="stat"><div class="num" data-count="11">0</div><div class="lbl">Years of experience</div></div>
+          <div class="stat"><div class="num" data-count="180">0</div><div class="lbl">APIs delivered</div></div>
+          <div class="stat"><div class="num" data-count="32">0</div><div class="lbl">Systems modernized</div></div>
+          <div class="stat"><div class="num" data-count="240">0</div><div class="lbl">Cloud deployments</div></div>
+          <div class="stat"><div class="num" data-count="65" data-suffix="%">0</div><div class="lbl">Avg. perf. improvement</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECH STACK -->
+    <section id="stack" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">02 — Stack</span>
+          <h2 class="h2">Tools I reach for, hardened in production.</h2>
+          <p class="section-sub">A pragmatic toolkit — chosen for reliability, performance, and operational clarity at scale.</p>
+        </div>
+        <div class="stack-grid">
+          <article class="glass stack-card reveal">
+            <header><h3>Backend Engineering</h3></header>
+            <ul class="bars">
+              <li><span>Go</span><div class="bar"><i style="--w:95%"></i></div></li>
+              <li><span>PHP</span><div class="bar"><i style="--w:92%"></i></div></li>
+              <li><span>Symfony</span><div class="bar"><i style="--w:88%"></i></div></li>
+              <li><span>REST &amp; gRPC</span><div class="bar"><i style="--w:94%"></i></div></li>
+            </ul>
+          </article>
+          <article class="glass stack-card reveal">
+            <header><h3>Cloud &amp; Infrastructure</h3></header>
+            <ul class="bars">
+              <li><span>AWS</span><div class="bar"><i style="--w:92%"></i></div></li>
+              <li><span>GCP</span><div class="bar"><i style="--w:80%"></i></div></li>
+              <li><span>Kubernetes</span><div class="bar"><i style="--w:90%"></i></div></li>
+              <li><span>Docker</span><div class="bar"><i style="--w:95%"></i></div></li>
+            </ul>
+          </article>
+          <article class="glass stack-card reveal">
+            <header><h3>Databases</h3></header>
+            <ul class="bars">
+              <li><span>PostgreSQL</span><div class="bar"><i style="--w:93%"></i></div></li>
+              <li><span>MySQL</span><div class="bar"><i style="--w:90%"></i></div></li>
+              <li><span>Redis</span><div class="bar"><i style="--w:88%"></i></div></li>
+              <li><span>Elasticsearch</span><div class="bar"><i style="--w:82%"></i></div></li>
+            </ul>
+          </article>
+          <article class="glass stack-card reveal">
+            <header><h3>Messaging &amp; Distributed Systems</h3></header>
+            <ul class="bars">
+              <li><span>RabbitMQ</span><div class="bar"><i style="--w:90%"></i></div></li>
+              <li><span>Event-driven patterns</span><div class="bar"><i style="--w:92%"></i></div></li>
+              <li><span>Microservices</span><div class="bar"><i style="--w:94%"></i></div></li>
+              <li><span>Saga / CQRS</span><div class="bar"><i style="--w:85%"></i></div></li>
+            </ul>
+          </article>
+          <article class="glass stack-card reveal">
+            <header><h3>DevOps &amp; CI/CD</h3></header>
+            <ul class="bars">
+              <li><span>GitHub Actions</span><div class="bar"><i style="--w:93%"></i></div></li>
+              <li><span>Terraform / IaC</span><div class="bar"><i style="--w:84%"></i></div></li>
+              <li><span>Helm</span><div class="bar"><i style="--w:82%"></i></div></li>
+              <li><span>Blue/Green &amp; Canary</span><div class="bar"><i style="--w:88%"></i></div></li>
+            </ul>
+          </article>
+          <article class="glass stack-card reveal">
+            <header><h3>Monitoring &amp; Observability</h3></header>
+            <ul class="bars">
+              <li><span>Prometheus</span><div class="bar"><i style="--w:90%"></i></div></li>
+              <li><span>Grafana</span><div class="bar"><i style="--w:91%"></i></div></li>
+              <li><span>OpenTelemetry</span><div class="bar"><i style="--w:85%"></i></div></li>
+              <li><span>Structured logging</span><div class="bar"><i style="--w:93%"></i></div></li>
+            </ul>
+          </article>
+          <article class="glass stack-card reveal">
+            <header><h3>Frontend Technologies</h3></header>
+            <ul class="bars">
+              <li><span>JavaScript</span><div class="bar"><i style="--w:90%"></i></div></li>
+              <li><span>React</span><div class="bar"><i style="--w:84%"></i></div></li>
+              <li><span>HTML/CSS</span><div class="bar"><i style="--w:90%"></i></div></li>
+              <li><span>API integration</span><div class="bar"><i style="--w:92%"></i></div></li>
+            </ul>
+          </article>
+          <article class="glass stack-card reveal">
+            <header><h3>AI-assisted Development</h3></header>
+            <ul class="bars">
+              <li><span>LLM-driven refactors</span><div class="bar"><i style="--w:88%"></i></div></li>
+              <li><span>Spec &amp; test generation</span><div class="bar"><i style="--w:86%"></i></div></li>
+              <li><span>Code review augmentation</span><div class="bar"><i style="--w:84%"></i></div></li>
+              <li><span>RAG &amp; embedding pipelines</span><div class="bar"><i style="--w:80%"></i></div></li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">03 — Experience</span>
+          <h2 class="h2">A decade shipping production systems.</h2>
+        </div>
+        <ol class="timeline">
+          <li class="t-item reveal">
+            <div class="t-dot"></div>
+            <article class="glass t-card">
+              <header>
+                <h3>Senior Software Engineer</h3>
+                <span class="t-company">IBM Consulting</span>
+                <span class="t-years">2022 — Present</span>
+              </header>
+              <p>Lead backend engineer on enterprise modernization engagements — migrating monolithic Java/PHP estates into containerized service meshes on AWS EKS. Designed event-driven integration layers, hardened deployment pipelines, and introduced SLO-driven observability across critical services.</p>
+              <ul class="t-bullets">
+                <li>Architected a multi-tenant ingestion platform processing <strong>1.2B events/month</strong> with sub-second p95 latency.</li>
+                <li>Cut deployment cycle time by <strong>72%</strong> through GitHub Actions, Helm, and progressive delivery.</li>
+                <li>Established golden-signal dashboards in Prometheus/Grafana, reducing MTTR from hours to minutes.</li>
+              </ul>
+              <div class="t-stack">Go · Kubernetes · AWS · PostgreSQL · Kafka-style messaging · OpenTelemetry</div>
+            </article>
+          </li>
+          <li class="t-item reveal">
+            <div class="t-dot"></div>
+            <article class="glass t-card">
+              <header>
+                <h3>Software Engineer — Backend</h3>
+                <span class="t-company">Seidor</span>
+                <span class="t-years">2019 — 2022</span>
+              </header>
+              <p>Owned the design and delivery of distributed backend services powering logistics and ERP integrations for enterprise clients. Drove the shift from synchronous batch jobs to event-driven workflows, unlocking real-time visibility for operations teams.</p>
+              <ul class="t-bullets">
+                <li>Designed a fleet telemetry API serving <strong>40k req/min</strong> with horizontal autoscaling on GKE.</li>
+                <li>Replaced fragile cron pipelines with RabbitMQ-based workflows, eliminating <strong>90%</strong> of weekend pages.</li>
+                <li>Introduced contract testing and CI gates that reduced regressions across 14 services.</li>
+              </ul>
+              <div class="t-stack">PHP · Symfony · Go · GCP · RabbitMQ · Redis · MySQL</div>
+            </article>
+          </li>
+          <li class="t-item reveal">
+            <div class="t-dot"></div>
+            <article class="glass t-card">
+              <header>
+                <h3>Backend Engineer</h3>
+                <span class="t-company">Slash</span>
+                <span class="t-years">2015 — 2019</span>
+              </header>
+              <p>Built and scaled the API platform behind a fast-growing SaaS product. Defined service boundaries, introduced API versioning, and led a successful migration to containerized infrastructure that absorbed a 6x growth in traffic.</p>
+              <ul class="t-bullets">
+                <li>Re-architected the core API for horizontal scale, dropping p95 latency from <strong>410ms to 78ms</strong>.</li>
+                <li>Designed a Redis-backed caching tier that reduced database load by <strong>~65%</strong>.</li>
+                <li>Mentored four engineers through code reviews, design docs, and on-call playbooks.</li>
+              </ul>
+              <div class="t-stack">PHP · Symfony · Docker · Redis · Elasticsearch · PostgreSQL</div>
+            </article>
+          </li>
+          <li class="t-item reveal">
+            <div class="t-dot"></div>
+            <article class="glass t-card">
+              <header>
+                <h3>Junior Software Engineer</h3>
+                <span class="t-company">2V Modules</span>
+                <span class="t-years">2014 — 2015</span>
+              </header>
+              <p>Early-career engineer focused on building robust backend modules for B2B platforms. Established conventions for API design, error handling, and deployment that the team carried forward as the product matured.</p>
+              <ul class="t-bullets">
+                <li>Delivered the company's first REST API standard, adopted across <strong>9 internal products</strong>.</li>
+                <li>Built reporting and analytics services on top of MySQL, replacing manual exports.</li>
+                <li>Introduced automated testing and CI, lifting release confidence across the team.</li>
+              </ul>
+              <div class="t-stack">PHP · MySQL · JavaScript · Linux · REST APIs</div>
+            </article>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">04 — Selected Work</span>
+          <h2 class="h2">Featured engineering projects.</h2>
+          <p class="section-sub">A snapshot of systems I've designed, modernized, or scaled.</p>
+        </div>
+        <div class="proj-grid">
+          <article class="glass proj reveal">
+            <div class="proj-img"><img src="assets/project-1.jpg" alt="Atlas — Fleet Telemetry Platform" loading="lazy" /></div>
+            <div class="proj-body">
+              <h3>Atlas — Fleet Telemetry Platform</h3>
+              <p>Event-driven ingestion and real-time analytics for a national logistics fleet. Devices stream telemetry into a Go ingestion layer, fan out through RabbitMQ, and land in a partitioned PostgreSQL store powering operator dashboards.</p>
+              <ul class="metrics">
+                <li><strong>40k</strong> req/min sustained</li>
+                <li><strong>p95 78ms</strong> API latency</li>
+                <li><strong>99.99%</strong> uptime</li>
+              </ul>
+              <div class="t-stack">Go · Kubernetes (GKE) · RabbitMQ · PostgreSQL · Prometheus</div>
+            </div>
+          </article>
+
+          <article class="glass proj reveal">
+            <div class="proj-img"><img src="assets/project-2.jpg" alt="Helios — Multi-Region Cloud API" loading="lazy" /></div>
+            <div class="proj-body">
+              <h3>Helios — Multi-Region Cloud API</h3>
+              <p>A cloud-native API platform with active-active deployments across AWS regions, fronted by a custom edge router and protected by per-tenant rate limiting and circuit breakers.</p>
+              <ul class="metrics">
+                <li><strong>3 regions</strong> active-active</li>
+                <li><strong>1.2B</strong> requests/month</li>
+                <li><strong>-65%</strong> infra cost vs. legacy</li>
+              </ul>
+              <div class="t-stack">Go · AWS EKS · gRPC · Redis · Terraform · OpenTelemetry</div>
+            </div>
+          </article>
+
+          <article class="glass proj reveal">
+            <div class="proj-img"><img src="assets/project-3.jpg" alt="Lumen — Observability Mesh" loading="lazy" /></div>
+            <div class="proj-body">
+              <h3>Lumen — Observability Mesh</h3>
+              <p>A unified observability layer for a microservices estate: OpenTelemetry collectors, structured logging pipelines, and SLO dashboards turning noisy signals into actionable alerts.</p>
+              <ul class="metrics">
+                <li><strong>120+</strong> services instrumented</li>
+                <li><strong>-80%</strong> MTTR</li>
+                <li><strong>SLO-based</strong> alerting</li>
+              </ul>
+              <div class="t-stack">OpenTelemetry · Prometheus · Grafana · Loki · Kubernetes</div>
+            </div>
+          </article>
+
+          <article class="glass proj reveal">
+            <div class="proj-img"><img src="assets/project-4.jpg" alt="Pulse — Event-Driven Order Bus" loading="lazy" /></div>
+            <div class="proj-body">
+              <h3>Pulse — Event-Driven Order Bus</h3>
+              <p>Replaced a brittle synchronous order pipeline with an event-driven backbone built on durable queues, idempotent consumers, and a saga coordinator for cross-service transactions.</p>
+              <ul class="metrics">
+                <li><strong>-90%</strong> on-call pages</li>
+                <li><strong>Exactly-once</strong> semantics</li>
+                <li><strong>14 services</strong> coordinated</li>
+              </ul>
+              <div class="t-stack">PHP · Symfony · RabbitMQ · PostgreSQL · Redis</div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERTISE -->
+    <section id="expertise" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">05 — Expertise</span>
+          <h2 class="h2">Areas of deep practice.</h2>
+        </div>
+        <div class="exp-grid">
+          <div class="glass exp-card reveal"><h3>Backend Architecture</h3><p>Designing service boundaries, contracts, and data flows that age well.</p></div>
+          <div class="glass exp-card reveal"><h3>Distributed Systems</h3><p>Consistency trade-offs, idempotency, retries, and failure modes done right.</p></div>
+          <div class="glass exp-card reveal"><h3>Cloud Engineering</h3><p>AWS &amp; GCP, Kubernetes, IaC, and cost-aware infrastructure design.</p></div>
+          <div class="glass exp-card reveal"><h3>API Design</h3><p>REST and gRPC APIs built for clarity, versioning, and long-term evolution.</p></div>
+          <div class="glass exp-card reveal"><h3>Scalability Engineering</h3><p>Caching tiers, partitioning, autoscaling, and performance budgets.</p></div>
+          <div class="glass exp-card reveal"><h3>DevOps</h3><p>CI/CD pipelines, progressive delivery, and reproducible environments.</p></div>
+          <div class="glass exp-card reveal"><h3>System Reliability</h3><p>SLOs, error budgets, on-call hygiene, and post-incident learning.</p></div>
+          <div class="glass exp-card reveal"><h3>Observability</h3><p>Metrics, traces, and logs unified into signals teams actually act on.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">06 — Testimonials</span>
+          <h2 class="h2">What teammates say.</h2>
+        </div>
+        <div class="testi-grid">
+          <figure class="glass testi reveal">
+            <blockquote>"Paul is the engineer you want owning the hard parts of the system. He turned our brittle integration layer into something we genuinely trust on-call."</blockquote>
+            <figcaption><strong>Marina Costa</strong><span>Engineering Manager · IBM Consulting</span></figcaption>
+          </figure>
+          <figure class="glass testi reveal">
+            <blockquote>"He's the rare backend engineer who thinks about contracts, observability, and rollout strategy in the same breath. Our platform shipped faster and broke less after he joined."</blockquote>
+            <figcaption><strong>Diego Almeida</strong><span>Technical Lead · Seidor</span></figcaption>
+          </figure>
+          <figure class="glass testi reveal">
+            <blockquote>"Paul translated a vague product vision into a clean service architecture and a delivery plan we could actually trust. Senior in every sense of the word."</blockquote>
+            <figcaption><strong>Helena Ribeiro</strong><span>Product Manager · Slash</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact-section">
+      <div class="map-bg" aria-hidden="true"></div>
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">07 — Contact</span>
+          <h2 class="h2">Let's build something resilient.</h2>
+          <p class="section-sub">Open to senior engineering roles, architecture consulting, and high-impact contract work.</p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-cards reveal">
+            <div class="glass c-card">
+              <span class="c-label">Email</span>
+              <a href="mailto:paulmartin.s92@outlook.com">paulmartin.s92@outlook.com</a>
+            </div>
+            <div class="glass c-card">
+              <span class="c-label">Phone</span>
+              <a href="tel:+55 53 8677-8556">+55 53 8677-8556 <span class="c-hint"></span></a>
+            </div>
+            <div class="glass c-card">
+              <span class="c-label">Location</span>
+              <p>Avaí, Brazil</p>
+            </div>
+            <div class="glass c-card">
+              <span class="c-label">Languages</span>
+              <p>Portuguese · English</p>
+            </div>
+          </div>
+          <form class="glass contact-form reveal" onsubmit="event.preventDefault(); this.querySelector('.form-status').textContent='Thanks — I\\'ll be in touch shortly.'; this.reset();">
+            <div class="field"><label for="name">Name</label><input id="name" name="name" type="text" required autocomplete="name" /></div>
+            <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" required autocomplete="email" /></div>
+            <div class="field"><label for="subject">Subject</label><input id="subject" name="subject" type="text" required /></div>
+            <div class="field"><label for="message">Message</label><textarea id="message" name="message" rows="5" required></textarea></div>
+            <button type="submit" class="btn btn-primary">Send message</button>
+            <p class="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#home" class="logo">
+        <span class="logo-text">Paul Martins</span>
+      </a>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="#about">About</a>
+        <a href="#stack">Stack</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <p class="copy">© <span id="year"></span> Paul Martins — Senior Software Engineer. Crafted with care in Brazil.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
